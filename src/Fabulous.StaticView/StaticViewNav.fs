@@ -5,7 +5,6 @@ open System
 open System.Diagnostics
 open Fabulous.Core
 open Fabulous.StaticViews
-open Fabulous.DynamicViews
 open Xamarin.Forms
 
 [<RequireQualifiedAccess>]

@@ -7,6 +7,28 @@ open Fabulous.Core
 open Fabulous.StaticViews
 open Xamarin.Forms
 
+/// We store the current dispatch function for the running Elmish program as a 
+/// static-global thunk because we want old view elements stored in the `dependsOn` global table
+/// to be recyclable on resumption (when a new ProgramRunner gets created).
+type internal ProgramDispatch<'msg>()  = 
+    static let mutable dispatchImpl = (fun (_msg: 'msg) -> failwith "do not call dispatch during initialization" : unit)
+
+    static let dispatch = 
+        id (fun msg -> 
+            dispatchImpl msg)
+
+    static member DispatchViaThunk = dispatch 
+    static member SetDispatchThunk v = dispatchImpl <- v
+
+/// Program type captures various aspects of program behavior
+type Program<'model, 'msg, 'view> = 
+    { init : unit -> 'model * Cmd<'msg>
+      update : 'msg -> 'model -> 'model * Cmd<'msg>
+      subscribe : 'model -> Cmd<'msg>
+      view : 'view
+      debug : bool
+      onError : (string * exn) -> unit }
+
 [<RequireQualifiedAccess>]
 module StaticView =
 

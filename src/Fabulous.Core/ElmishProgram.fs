@@ -7,10 +7,6 @@ open Fabulous.Core
 open Fabulous.DynamicViews
 open Xamarin.Forms
 
-[<AutoOpen>]
-module Values =
-    let NoCmd<'a> : Cmd<'a> = Cmd.none
-
 /// We store the current dispatch function for the running Elmish program as a 
 /// static-global thunk because we want old view elements stored in the `dependsOn` global table
 /// to be recyclable on resumption (when a new ProgramRunner gets created).
@@ -231,18 +227,11 @@ module Program =
     let withDebug program = 
         { program with debug = true }
 
-    /// Run the app with ddynamic views for a specific application
+    /// Run the app with dynamic views for a specific application
+    [<Obsolete("Please use Program.run", true)>]
     let runWithDynamicView (app : Application) (program: Program<'model, 'msg, _>) = 
         ProgramRunner(app, program)
 
-    /// Creates the view model for the given page and starts the Elmish dispatch loop for the matching program
-    [<Obsolete("Please use Program.runWithDynamicView", true)>]
-    let run app program = ProgramRunner(app,program)
-
-    /// Add dynamic views associated with a specific application
-    [<Obsolete("Please use Program.runWithDynamicView", true)>]
-    let withDynamicView _app (_program: Program<'model, 'msg, _>) = failwith ""
-
-    /// Add dynamic views associated with a specific application
-    [<Obsolete("Please open Fabulous.StaticViews and use Program.runWithStaticView", true)>]
-    let withStaticView (_program: Program<'model, 'msg, _>) = failwith ""
+    /// Run the app with dynamic views for a specific application
+    let run (app : Application) (program: Program<'model, 'msg, _>) = 
+        ProgramRunner(app, program)
