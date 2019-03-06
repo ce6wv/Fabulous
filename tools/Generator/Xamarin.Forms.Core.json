@@ -7,7 +7,8 @@
   "types": [
     {
       "name": "Xamarin.Forms.Element",
-      "members": [
+      "events": [],
+      "properties": [
         {
           "name": "ClassId",
           "defaultValue": "null"
@@ -38,7 +39,8 @@
     },
     {
       "name": "Xamarin.Forms.VisualElement",
-      "members": [
+      "events": [],
+      "properties": [
         {
           "name": "AnchorX",
           "defaultValue": "0.0"
@@ -190,7 +192,8 @@
     },
     {
       "name": "Xamarin.Forms.View",
-      "members": [
+      "events": [],
+      "properties": [
         {
           "name": "HorizontalOptions",
           "defaultValue": "Xamarin.Forms.LayoutOptions.Fill"
@@ -217,11 +220,13 @@
     },
     {
       "name": "Xamarin.Forms.IGestureRecognizer",
-      "members": []
+      "events": [],
+      "properties": []
     },
     {
       "name": "Xamarin.Forms.PanGestureRecognizer",
-      "members": [
+      "events": [],
+      "properties": [
         {
           "name": "TouchPoints",
           "defaultValue": "1"
@@ -236,7 +241,8 @@
     },
     {
       "name": "Xamarin.Forms.TapGestureRecognizer",
-      "members": [
+      "events": [],
+      "properties": [
         {
           "name": "Command",
           "defaultValue": "null",
@@ -251,7 +257,8 @@
     },
     {
       "name": "Xamarin.Forms.ClickGestureRecognizer",
-      "members": [
+      "events": [],
+      "properties": [
         {
           "name": "Command",
           "defaultValue": "null",
@@ -270,7 +277,8 @@
     },
     {
       "name": "Xamarin.Forms.PinchGestureRecognizer",
-      "members": [
+      "events": [],
+      "properties": [
         {
           "name": "IsPinching",
           "defaultValue": "false"
@@ -285,7 +293,8 @@
     },
     {
       "name": "Xamarin.Forms.SwipeGestureRecognizer",
-      "members": [
+      "events": [],
+      "properties": [
         {
           "name": "Command",
           "defaultValue": "null",
@@ -311,7 +320,8 @@
     },
     {
       "name": "Xamarin.Forms.ActivityIndicator",
-      "members": [
+      "events": [],
+      "properties": [
         {
           "name": "Color",
           "defaultValue": "Xamarin.Forms.Color.Default"
@@ -324,7 +334,8 @@
     },
     {
       "name": "Xamarin.Forms.BoxView",
-      "members": [
+      "events": [],
+      "properties": [
         {
           "name": "Color",
           "defaultValue": "Xamarin.Forms.Color.Default"
@@ -338,7 +349,8 @@
     },
     {
       "name": "Xamarin.Forms.ProgressBar",
-      "members": [
+      "events": [],
+      "properties": [
         {
           "name": "Progress",
           "defaultValue": "0.0"
@@ -347,7 +359,8 @@
     },
     {
       "name": "Xamarin.Forms.Layout",
-      "members": [
+      "events": [],
+      "properties": [
         {
           "name": "IsClippedToBounds",
           "defaultValue": "false"
@@ -363,7 +376,8 @@
     },
     {
       "name": "Xamarin.Forms.ScrollView",
-      "members": [
+      "events": [],
+      "properties": [
         {
           "name": "Content",
           "defaultValue": "null"
@@ -397,7 +411,8 @@
     },
     {
       "name": "Xamarin.Forms.SearchBar",
-      "members": [
+      "events": [],
+      "properties": [
         {
           "name": "CancelButtonColor",
           "defaultValue": "Xamarin.Forms.Color.Default"
@@ -461,7 +476,8 @@
     },
     {
       "name": "Xamarin.Forms.Button",
-      "members": [
+      "events": [],
+      "properties": [
         {
           "name": "Text",
           "defaultValue": "null"
@@ -535,7 +551,8 @@
     },
     {
       "name": "Xamarin.Forms.Slider",
-      "members": [
+      "events": [],
+      "properties": [
         {
           "name": "MinimumMaximum",
           "inputType": "float * float",
@@ -557,7 +574,8 @@
     },
     {
       "name": "Xamarin.Forms.Stepper",
-      "members": [
+      "events": [],
+      "properties": [
         {
           "name": "MinimumMaximum",
           "inputType": "float * float",
@@ -583,7 +601,8 @@
     },
     {
       "name": "Xamarin.Forms.Switch",
-      "members": [
+      "events": [],
+      "properties": [
         {
           "name": "IsToggled",
           "defaultValue": "false"
@@ -602,7 +621,8 @@
     },
     {
       "name": "Xamarin.Forms.Cell",
-      "members": [
+      "events": [],
+      "properties": [
         {
           "name": "Height",
           "defaultValue": "-1.0"
@@ -615,7 +635,8 @@
     },
     {
       "name": "Xamarin.Forms.SwitchCell",
-      "members": [
+      "events": [],
+      "properties": [
         {
           "name": "On",
           "defaultValue": "false"
@@ -634,7 +655,8 @@
     },
     {
       "name": "Xamarin.Forms.TableView",
-      "members": [
+      "events": [],
+      "properties": [
         {
           "name": "Intent",
           "defaultValue": "Unchecked.defaultof<Xamarin.Forms.TableIntent>"
@@ -662,7 +684,8 @@
     },
     {
       "name": "Xamarin.Forms.RowDefinition",
-      "members": [
+      "events": [],
+      "properties": [
         {
           "name": "Height",
           "uniqueName": "RowDefinitionHeight",
@@ -674,7 +697,8 @@
     },
     {
       "name": "Xamarin.Forms.ColumnDefinition",
-      "members": [
+      "events": [],
+      "properties": [
         {
           "name": "Width",
           "uniqueName": "ColumnDefinitionWidth",
@@ -686,7 +710,8 @@
     },
     {
       "name": "Xamarin.Forms.Grid",
-      "members": [
+      "events": [],
+      "properties": [
         {
           "name": "RowDefinitions",
           "uniqueName": "GridRowDefinitions",
@@ -754,7 +779,8 @@
     },
     {
       "name": "Xamarin.Forms.AbsoluteLayout",
-      "members": [
+      "events": [],
+      "properties": [
         {
           "name": "Children",
           "defaultValue": "null",
@@ -780,7 +806,8 @@
     },
     {
       "name": "Xamarin.Forms.RelativeLayout",
-      "members": [
+      "events": [],
+      "properties": [
         {
           "name": "Children",
           "defaultValue": "null",
@@ -824,7 +851,8 @@
     },
     {
       "name": "Xamarin.Forms.FlexLayout",
-      "members": [
+      "events": [],
+      "properties": [
         {
           "name": "AlignContent",
           "modelType": "Xamarin.Forms.FlexAlignContent",
@@ -903,11 +931,13 @@
     },
     {
       "name": "Xamarin.Forms.TemplatedView",
-      "members": []
+      "events": [],
+      "properties": []
     },
     {
       "name": "Xamarin.Forms.ContentView",
-      "members": [
+      "events": [],
+      "properties": [
         {
           "name": "Content",
           "defaultValue": "null"
@@ -916,7 +946,8 @@
     },
     {
       "name": "Xamarin.Forms.DatePicker",
-      "members": [
+      "events": [],
+      "properties": [
         {
           "name": "Date",
           "defaultValue": "Unchecked.defaultof<System.DateTime>"
@@ -943,7 +974,8 @@
     },
     {
       "name": "Xamarin.Forms.Picker",
-      "members": [
+      "events": [],
+      "properties": [
         {
           "name": "ItemsSource",
           "uniqueName": "PickerItemsSource",
@@ -974,7 +1006,8 @@
     },
     {
       "name": "Xamarin.Forms.Frame",
-      "members": [
+      "events": [],
+      "properties": [
         {
           "name": "BorderColor",
           "defaultValue": "Xamarin.Forms.Color.Default"
@@ -995,7 +1028,8 @@
     },
     {
       "name": "Xamarin.Forms.Image",
-      "members": [
+      "events": [],
+      "properties": [
         {
           "name": "Source",
           "uniqueName": "ImageSource",
@@ -1016,7 +1050,8 @@
     },
     {
       "name": "Xamarin.Forms.ImageButton",
-      "members": [
+      "events": [],
+      "properties": [
         {
           "name": "Command",
           "uniqueName": "ImageButtonCommand",
@@ -1079,7 +1114,8 @@
     },
     {
       "name": "Xamarin.Forms.InputView",
-      "members": [
+      "events": [],
+      "properties": [
         {
           "name": "Keyboard",
           "defaultValue": "Xamarin.Forms.Keyboard.Default"
@@ -1088,7 +1124,8 @@
     },
     {
       "name": "Xamarin.Forms.Editor",
-      "members": [
+      "events": [],
+      "properties": [
         {
           "name": "Text",
           "defaultValue": "null"
@@ -1140,7 +1177,15 @@
     },
     {
       "name": "Xamarin.Forms.Entry",
-      "members": [
+      "events": [
+        {
+          "name": "TextChanged",
+          "defaultValue": "null",
+          "inputType": "Xamarin.Forms.TextChangedEventArgs -> unit",
+          "convToModel": "(fun f -> System.EventHandler<Xamarin.Forms.TextChangedEventArgs>(fun _sender args -> f args))"
+        }
+      ],
+      "properties": [
         {
           "name": "Text",
           "defaultValue": "null"
@@ -1187,12 +1232,6 @@
           "convToModel": "(fun f -> System.EventHandler(fun sender args -> f (sender :?> Xamarin.Forms.Entry).Text))"
         },
         {
-          "name": "TextChanged",
-          "defaultValue": "null",
-          "inputType": "Xamarin.Forms.TextChangedEventArgs -> unit",
-          "convToModel": "(fun f -> System.EventHandler<Xamarin.Forms.TextChangedEventArgs>(fun _sender args -> f args))"
-        },
-        {
           "name": "IsTextPredictionEnabled",
           "defaultValue": "true"
         },
@@ -1221,7 +1260,8 @@
     {
       "name": "Fabulous.CustomControls.CustomEntryCell",
       "modelName": "EntryCell",
-      "members": [
+      "events": [],
+      "properties": [
         {
           "name": "Label",
           "defaultValue": "null"
@@ -1260,7 +1300,8 @@
     },
     {
       "name": "Xamarin.Forms.Label",
-      "members": [
+      "events": [],
+      "properties": [
         {
           "name": "Text",
           "defaultValue": "null"
@@ -1315,7 +1356,8 @@
     },
     {
       "name": "Xamarin.Forms.StackLayout",
-      "members": [
+      "events": [],
+      "properties": [
         {
           "name": "Children",
           "defaultValue": "null",
@@ -1336,7 +1378,8 @@
     },
     {
       "name": "Xamarin.Forms.Span",
-      "members": [
+      "events": [],
+      "properties": [
         {
           "name": "FontFamily",
           "defaultValue": "null"
@@ -1381,7 +1424,8 @@
     },
     {
       "name": "Xamarin.Forms.FormattedString",
-      "members": [
+      "events": [],
+      "properties": [
         {
           "name": "Spans",
           "defaultValue": "null",
@@ -1392,7 +1436,8 @@
     },
     {
       "name": "Xamarin.Forms.TimePicker",
-      "members": [
+      "events": [],
+      "properties": [
         {
           "name": "Time",
           "defaultValue": "new System.TimeSpan()"
@@ -1409,7 +1454,8 @@
     },
     {
       "name": "Xamarin.Forms.WebView",
-      "members": [
+      "events": [],
+      "properties": [
         {
           "name": "Source",
           "uniqueName": "WebSource",
@@ -1444,7 +1490,8 @@
     },
     {
       "name": "Xamarin.Forms.Page",
-      "members": [
+      "events": [],
+      "properties": [
         {
           "name": "Title",
           "defaultValue": "\"\""
@@ -1512,7 +1559,8 @@
     },
     {
       "name": "Xamarin.Forms.CarouselPage",
-      "members": [
+      "events": [],
+      "properties": [
         {
           "name": "Children",
           "defaultValue": "null",
@@ -1539,7 +1587,8 @@
     },
     {
       "name": "Xamarin.Forms.NavigationPage",
-      "members": [
+      "events": [],
+      "properties": [
         {
           "name": "Pages",
           "inputType": "ViewElement list",
@@ -1609,7 +1658,8 @@
     },
     {
       "name": "Xamarin.Forms.TabbedPage",
-      "members": [
+      "events": [],
+      "properties": [
         {
           "name": "Children",
           "defaultValue": "null",
@@ -1645,7 +1695,8 @@
     {
       "name": "Xamarin.Forms.ContentPage",
       "customType": "Fabulous.DynamicViews.CustomContentPage",
-      "members": [
+      "events": [],
+      "properties": [
         {
           "name": "Content",
           "defaultValue": "null"
@@ -1662,7 +1713,8 @@
     },
     {
       "name": "Xamarin.Forms.MasterDetailPage",
-      "members": [
+      "events": [],
+      "properties": [
         {
           "name": "Master",
           "defaultValue": "null"
@@ -1693,7 +1745,8 @@
     },
     {
       "name": "Xamarin.Forms.MenuItem",
-      "members": [
+      "events": [],
+      "properties": [
         {
           "name": "Text",
           "defaultValue": "null"
@@ -1727,7 +1780,8 @@
     },
     {
       "name": "Xamarin.Forms.TextCell",
-      "members": [
+      "events": [],
+      "properties": [
         {
           "name": "Text",
           "defaultValue": "null"
@@ -1768,7 +1822,8 @@
     },
     {
       "name": "Xamarin.Forms.ToolbarItem",
-      "members": [
+      "events": [],
+      "properties": [
         {
           "name": "Order",
           "defaultValue": "Xamarin.Forms.ToolbarItemOrder.Default"
@@ -1781,7 +1836,8 @@
     },
     {
       "name": "Xamarin.Forms.ImageCell",
-      "members": [
+      "events": [],
+      "properties": [
         {
           "name": "ImageSource",
           "inputType": "obj",
@@ -1793,7 +1849,8 @@
     },
     {
       "name": "Xamarin.Forms.ViewCell",
-      "members": [
+      "events": [],
+      "properties": [
         {
           "name": "View",
           "defaultValue": "null"
@@ -1803,7 +1860,8 @@
     {
       "name": "Xamarin.Forms.ListView",
       "customType": "Fabulous.DynamicViews.CustomListView",
-      "members": [
+      "events": [],
+      "properties": [
         {
           "name": "ItemsSource",
           "uniqueName": "ListViewItems",
@@ -1912,7 +1970,8 @@
       "name": "Xamarin.Forms.ListView",
       "modelName": "ListViewGrouped",
       "customType": "Fabulous.DynamicViews.CustomGroupListView",
-      "members": [
+      "events": [],
+      "properties": [
         {
           "name": "ItemsSource",
           "uniqueName": "ListViewGrouped_ItemsSource",

@@ -3,6 +3,7 @@ namespace Fabulous.Generator
 
 open System.Collections.Generic
 open Helpers
+open System.Linq
 
 module Models =
     type MemberBinding() =
@@ -52,11 +53,24 @@ module Models =
         member this.LowerBoundShortName : string =
             toLowerPascalCase this.BoundShortName
 
+    type PropertyBinding() =
+        inherit MemberBinding()
+
+    type EventBinding() =
+        inherit MemberBinding()
+
     type TypeBinding() =
         member val Name : string = null with get, set
         member val ModelName : string = null with get, set
         member val CustomType : string = null with get, set
-        member val Members : List<MemberBinding> = null with get, set
+        member val Events : List<EventBinding> = null with get, set
+        member val Properties : List<PropertyBinding> = null with get, set
+
+        member this.Members : List<MemberBinding> =
+            let members = List<MemberBinding>()
+            members.AddRange(this.Events.Cast<MemberBinding>())
+            members.AddRange(this.Properties.Cast<MemberBinding>())
+            members
 
     type Bindings() =
         member val Assemblies : List<string> = null with get, set
