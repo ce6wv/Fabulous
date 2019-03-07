@@ -1,11 +1,4 @@
 name: full
-# Continuous integration is enabled for master
-trigger:
-  batch: true
-  paths:
-    exclude:
-    - README.md
-    - docs/*
 
 jobs:
 - job: Windows
