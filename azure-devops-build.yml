@@ -1,12 +1,5 @@
 name: build
 
-# Pull Request build is enabled for all except PRs only updating documentation
-pr:
-  paths:
-    exclude:
-    - README.md
-    - docs/*
-
 jobs:
 - job: Windows_BuildOnly
   displayName: 'Windows (Build only)'
